@@ -28,7 +28,7 @@ body {
 
 .lyrics {
   overflow-y: auto;
-  height: 20rem;
+  height: 12rem;
   padding: 2rem;
   background-color: #333;
   border-radius: 0.5rem;
@@ -46,5 +46,5 @@ body {
 }
 
 .current-line {
-  color: #A91B0D;
+  color: #e32513;
 }

@@ -1,5 +1,5 @@
 export default [
-    { time: 11.62, text: "I'm sittin' here in the boring room" },
+    { time: 12.55, text: "I'm sittin' here in the boring room" },
     { time: 16.11, text: "It's just another rainy Sunday afternoon" },
     { time: 18.85, text: "I'm wasting my time I got nothin' to do" },
     { time: 22.49, text: "I'm hangin' around I'm waitin' for you" },
