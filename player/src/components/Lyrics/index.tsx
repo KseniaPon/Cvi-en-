@@ -1,22 +1,27 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react'
 
 interface LyricsProps {
-    lines: string;
-    currentLineIndex: boolean;
+  lines: string
+  currentLineIndex: boolean
 }
 
-export const Lyrics = ({lines, currentLineIndex}: LyricsProps) => {
-    const lineRef = useRef<HTMLParagraphElement>(null)
+export const Lyrics = ({ lines, currentLineIndex }: LyricsProps) => {
+  const lineRef = useRef<HTMLParagraphElement>(null)
 
-    useEffect(() => {
-        lineRef.current?.scrollIntoView({
-            block: 'start',
-            inline: 'nearest',
-            behavior: 'smooth',
-          });
-    }, [currentLineIndex])
+  useEffect(() => {
+    lineRef.current?.scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth',
+    })
+  }, [currentLineIndex])
 
-    return (
-        <p ref={currentLineIndex ? lineRef : null} className={currentLineIndex ? "current-line" : ""}>{lines}</p>
-    )
+  return (
+    <p
+      ref={currentLineIndex ? lineRef : null}
+      className={currentLineIndex ? 'current-line' : ''}
+    >
+      {lines}
+    </p>
+  )
 }
